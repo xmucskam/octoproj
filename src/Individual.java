@@ -1,9 +1,11 @@
 public class Individual implements Person {
     protected String name;
+    protected String surname;
     protected int age;
 
-    public Individual(String name, int age) {
+    public Individual(String name, String surname, int age) {
         this.name = name;
+        this.surname = surname;
         this.age = age;
     }
 
@@ -13,11 +15,16 @@ public class Individual implements Person {
     }
 
     @Override
+    public String getSurname() {
+        return surname;
+    }
+
+    @Override
     public int getAge() {
         return age;
     }
 
     public void introduce() {
-        System.out.println("Hello, I am" + name + " and I am " + age + " years old.");
+        System.out.println("Hello, my name is " + name + " " + surname + " and I am " + age + " years old.");
     }
 }
