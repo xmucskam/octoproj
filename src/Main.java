@@ -1,5 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        MessagePrinter basicPrinter = new MessagePrinter();
+        basicPrinter.printMessage();
+
+        DetailedMessagePrinter detailedPrinter = new DetailedMessagePrinter();
+        detailedPrinter.printMessage();
+        detailedPrinter.printDetailedMessage();
     }
 }
