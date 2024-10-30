@@ -1,6 +1,12 @@
-public class MessagePrinter implements Worker {
+public class Employee implements Worker {
+    protected String name;
+
+    public Employee(String name) {
+        this.name = name;
+    }
+
     @Override
-    public void printMessage() {
-        System.out.println("This is the basic message");
+    public void work() {
+        System.out.println(name + " is working on their tasks.");
     }
 }

@@ -1,5 +1,9 @@
-public class DetailedMessagePrinter extends Employee {
-    public void printDetailedMessage() {
-        System.out.println("This is an extremely detailed message.");
+public class Manager extends Employee {
+    public Manager(String name) {
+        super(name);
+    }
+
+    public void manage() {
+        System.out.println(name + " is managing the team.");
     }
 }

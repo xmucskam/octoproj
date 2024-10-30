@@ -1,10 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        MessagePrinter basicPrinter = new MessagePrinter();
-        basicPrinter.printMessage();
+        Employee worker = new Employee("Alice");
+        worker.work();
 
-        DetailedMessagePrinter detailedPrinter = new DetailedMessagePrinter();
-        detailedPrinter.printMessage();
-        detailedPrinter.printDetailedMessage();
+        Manager manager = new Manager("Bob");
+        manager.work();
+        manager.manage();
     }
 }

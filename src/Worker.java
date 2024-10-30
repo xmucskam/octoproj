@@ -1,3 +1,3 @@
-public interface Printable {
-    void printMessage();
+public interface Worker {
+    void work();
 }
