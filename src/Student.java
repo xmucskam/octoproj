@@ -2,7 +2,7 @@ public class Student extends Individual {
     private String major;
 
     public Student(String name, int age, String major) {
-        super(name, age);  // Call the superclass (Individual) constructor
+        super(name, age);
         this.major = major;
     }
 
