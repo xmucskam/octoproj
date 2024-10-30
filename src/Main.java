@@ -1,14 +1,15 @@
 public class Main {
     public static void main(String[] args) {
+        Individual person = new Individual("Alice", "Johnson", 30);
+        person.getInfo();
 
-        Individual person = new Individual("Mark", "M", 22);
-        person.introduce();
 
-        Student student = new Student("120345", "Daniel", "Melo", 21);
-        student.introduce();
+        Student student = new Student("S12345", "Bob", "Smith", 20);
+        student.getInfo();
         student.study();
 
-        Employee employee = new Employee("Doe", "John", 50);
-        employee.introduce();
+
+        Employee employee = new Employee("Charlie", "Brown", 50);
+        employee.getInfo();
     }
 }

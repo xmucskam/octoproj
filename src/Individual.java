@@ -10,21 +10,7 @@ public class Individual implements Person {
     }
 
     @Override
-    public String getName() {
-        return name;
-    }
-
-    @Override
-    public String getSurname() {
-        return surname;
-    }
-
-    @Override
-    public int getAge() {
-        return age;
-    }
-
-    public void introduce() {
-        System.out.println("Hello, my name is " + name + " " + surname + " and I am " + age + " years old.");
+    public void getInfo() {
+        System.out.println("Name: " + name + ", Surname: " + surname + ", Age: " + age);
     }
 }

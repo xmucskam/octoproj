@@ -6,13 +6,10 @@ public class Student extends Individual {
         this.studentId = studentId;
     }
 
-    public String getStudentId() {
-        return studentId;  // Getter for student ID
-    }
-
     @Override
-    public void introduce() {
-        System.out.println("Hello, my name is " + name + " " + surname + ", I am " + age + " years old, and my student ID is " + studentId + ".");
+    public void getInfo() {
+        super.getInfo();  // Call the parent class getInfo
+        System.out.println("Student ID: " + studentId);  // Display student ID
     }
 
     public void study() {
